@@ -1,12 +1,14 @@
 body{
     background-color:black;
-    padding:0 32%
+    padding:0 32%;
+    padding-top: 100px;
 
 }
 
-.ip{
+
+#get{
   text-align: center;
-  padding-top: 100px;
+  padding-bottom: 10px
 }
 
 #box{
@@ -14,6 +16,7 @@ background-color: white;
 width:15px;
 height:15px;
 border: 1px solid;
+
 
 margin:1px
 
