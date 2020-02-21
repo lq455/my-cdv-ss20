@@ -1,4 +1,4 @@
-# Reading Response
+# Week 1 Reading Response (Lishan Qin)
 
 ***Introduction and Chapter 2***
 
