@@ -1,3 +1,5 @@
+###Reading Response
+
 ***Introduction and Chapter 2***
 
 **Why does Bowker say "'Raw data is both and oxymoron and a bad idea'" ? (pp. 663)**
