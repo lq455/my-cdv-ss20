@@ -1,3 +1,6 @@
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
 let data=[
     {
         "timestamp": "2020-02-19T12:42:30.720Z",
