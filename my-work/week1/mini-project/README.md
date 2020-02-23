@@ -1,0 +1,3 @@
+# Week 1 mini-project
+
+Through this project, I reviewed how to collect data using google forum. I practised how to export data from google sheets in json format and use these data to build a bar graph. It was indeed a very convenient method. However, I found that when turning these data into json, the program automatically change the name format of the keys into something like these “howFarIWillGoMoana”. I get that it's like normally how we define variable. But such key name does not look good when I present them on the web so I use 'command f' to replace them all. 
