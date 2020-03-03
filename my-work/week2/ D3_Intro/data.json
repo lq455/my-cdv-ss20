@@ -1,0 +1,374 @@
+[
+    {
+        "name": 101,
+        "xaxis": 1,
+        "yaxis": 19,
+        "times": 1
+    },
+    {
+        "name": 105,
+        "xaxis": 5,
+        "yaxis": 19,
+        "times": 6
+    },
+    {
+        "name": 107,
+        "xaxis": 7,
+        "yaxis": 19,
+        "times": 1
+    },
+    {
+        "name": 110,
+        "xaxis": 10,
+        "yaxis": 19,
+        "times": 1
+    },
+    {
+        "name": 115,
+        "xaxis": 15,
+        "yaxis": 19,
+        "times": 3
+    },
+    {
+        "name": 116,
+        "xaxis": 16,
+        "yaxis": 19,
+        "times": 1
+    },
+    {
+        "name": 209,
+        "xaxis": 9,
+        "yaxis": 18,
+        "times": 1
+    },
+    {
+        "name": 210,
+        "xaxis": 10,
+        "yaxis": 18,
+        "times": 1
+    },
+    {
+        "name": 211,
+        "xaxis": 11,
+        "yaxis": 18,
+        "times": 2
+    },
+    {
+        "name": 212,
+        "xaxis": 12,
+        "yaxis": 18,
+        "times": 2
+    },
+    {
+        "name": 213,
+        "xaxis": 13,
+        "yaxis": 18,
+        "times": 1
+    },
+    {
+        "name": 215,
+        "xaxis": 15,
+        "yaxis": 18,
+        "times": 1
+    },
+    {
+        "name": 216,
+        "xaxis": 16,
+        "yaxis": 18,
+        "times": 1
+    },
+    {
+        "name": 314,
+        "xaxis": 14,
+        "yaxis": 17,
+        "times": 3
+    },
+    {
+        "name": 315,
+        "xaxis": 15,
+        "yaxis": 17,
+        "times": 1
+    },
+    {
+        "name": 407,
+        "xaxis": 7,
+        "yaxis": 16,
+        "times": 2
+    },
+    {
+        "name": 415,
+        "xaxis": 15,
+        "yaxis": 16,
+        "times": 1
+    },
+    {
+        "name": 515,
+        "xaxis": 15,
+        "yaxis": 15,
+        "times": 2
+    },
+    {
+        "name": 605,
+        "xaxis": 5,
+        "yaxis": 14,
+        "times": 1
+    },
+    {
+        "name": 614,
+        "xaxis": 14,
+        "yaxis": 14,
+        "times": 1
+    },
+    {
+        "name": 805,
+        "xaxis": 5,
+        "yaxis": 12,
+        "times": 1
+    },
+    {
+        "name": 808,
+        "xaxis": 8,
+        "yaxis": 12,
+        "times": 1
+    },
+    {
+        "name": 809,
+        "xaxis": 9,
+        "yaxis": 12,
+        "times": 4
+    },
+    {
+        "name": 814,
+        "xaxis": 14,
+        "yaxis": 12,
+        "times": 4
+    },
+    {
+        "name": 910,
+        "xaxis": 10,
+        "yaxis": 11,
+        "times": 1
+    },
+    {
+        "name": 914,
+        "xaxis": 14,
+        "yaxis": 11,
+        "times": 3
+    },
+    {
+        "name": 1009,
+        "xaxis": 9,
+        "yaxis": 10,
+        "times": 5
+    },
+    {
+        "name": 1010,
+        "xaxis": 10,
+        "yaxis": 10,
+        "times": 5
+    },
+    {
+        "name": 1011,
+        "xaxis": 11,
+        "yaxis": 10,
+        "times": 1
+    },
+    {
+        "name": 1012,
+        "xaxis": 12,
+        "yaxis": 10,
+        "times": 1
+    },
+    {
+        "name": 1013,
+        "xaxis": 13,
+        "yaxis": 10,
+        "times": 1
+    },
+    {
+        "name": 1014,
+        "xaxis": 14,
+        "yaxis": 10,
+        "times": 1
+    },
+    {
+        "name": 1108,
+        "xaxis": 8,
+        "yaxis": 9,
+        "times": 2
+    },
+    {
+        "name": 1109,
+        "xaxis": 9,
+        "yaxis": 9,
+        "times": 2
+    },
+    {
+        "name": 1110,
+        "xaxis": 10,
+        "yaxis": 9,
+        "times": 1
+    },
+    {
+        "name": 1111,
+        "xaxis": 11,
+        "yaxis": 9,
+        "times": 1
+    },
+    {
+        "name": 1114,
+        "xaxis": 14,
+        "yaxis": 9,
+        "times": 2
+    },
+    {
+        "name": 1209,
+        "xaxis": 9,
+        "yaxis": 8,
+        "times": 1
+    },
+    {
+        "name": 1210,
+        "xaxis": 10,
+        "yaxis": 8,
+        "times": 5
+    },
+    {
+        "name": 1211,
+        "xaxis": 11,
+        "yaxis": 8,
+        "times": 2
+    },
+    {
+        "name": 1212,
+        "xaxis": 12,
+        "yaxis": 8,
+        "times": 1
+    },
+    {
+        "name": 1404,
+        "xaxis": 4,
+        "yaxis": 6,
+        "times": 7
+    },
+    {
+        "name": 1405,
+        "xaxis": 5,
+        "yaxis": 6,
+        "times": 1
+    },
+    {
+        "name": 1415,
+        "xaxis": 15,
+        "yaxis": 6,
+        "times": 1
+    },
+    {
+        "name": 1416,
+        "xaxis": 16,
+        "yaxis": 6,
+        "times": 1
+    },
+    {
+        "name": 1505,
+        "xaxis": 5,
+        "yaxis": 5,
+        "times": 1
+    },
+    {
+        "name": 1510,
+        "xaxis": 10,
+        "yaxis": 5,
+        "times": 1
+    },
+    {
+        "name": 1511,
+        "xaxis": 11,
+        "yaxis": 5,
+        "times": 2
+    },
+    {
+        "name": 1512,
+        "xaxis": 12,
+        "yaxis": 5,
+        "times": 2
+    },
+    {
+        "name": 1605,
+        "xaxis": 5,
+        "yaxis": 4,
+        "times": 7
+    },
+    {
+        "name": 1606,
+        "xaxis": 6,
+        "yaxis": 4,
+        "times": 4
+    },
+    {
+        "name": 1611,
+        "xaxis": 11,
+        "yaxis": 4,
+        "times": 3
+    },
+    {
+        "name": 1612,
+        "xaxis": 12,
+        "yaxis": 4,
+        "times": 4
+    },
+    {
+        "name": 1613,
+        "xaxis": 13,
+        "yaxis": 4,
+        "times": 4
+    },
+    {
+        "name": 1614,
+        "xaxis": 14,
+        "yaxis": 4,
+        "times": 1
+    },
+    {
+        "name": 1707,
+        "xaxis": 7,
+        "yaxis": 3,
+        "times": 7
+    },
+    {
+        "name": 1711,
+        "xaxis": 11,
+        "yaxis": 3,
+        "times": 1
+    },
+    {
+        "name": 1715,
+        "xaxis": 15,
+        "yaxis": 3,
+        "times": 2
+    },
+    {
+        "name": 1716,
+        "xaxis": 16,
+        "yaxis": 3,
+        "times": 1
+    },
+    {
+        "name": 1807,
+        "xaxis": 7,
+        "yaxis": 2,
+        "times": 5
+    },
+    {
+        "name": 1816,
+        "xaxis": 16,
+        "yaxis": 2,
+        "times": 2
+    },
+    {
+        "name": 1914,
+        "xaxis": 14,
+        "yaxis": 1,
+        "times": 1
+    }
+]
