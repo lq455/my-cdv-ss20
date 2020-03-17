@@ -1,0 +1,11 @@
+[
+    {
+        "day": 1,
+        "lights":[{"x":50,"y":10,"color":"#e6e6ff"},{"x":110,"y":20,"color":"#ffff80"},{"x":140,"y":30,"color":"#ffff99"},{"x":150,"y":10,"color":"#e6e6ff"},{"x":160,"y":10,"color":"#ffe6b3"},{"x":150,"y":20,"color":"#ffff80"},{"x":160,"y":20,"color":"#ffe6b3"},{"x":170,"y":40,"color":"#e6e6ff"},{"x":150,"y":50,"color":"#ffc34d"},{"x":140,"y":80,"color":"#ccccff"},{"x":140,"y":90,"color":"#e6e6ff"},{"x":100,"y":100,"color":"#ffe6b3"},{"x":90,"y":100,"color":"#ffe6b3"},{"x":90,"y":110,"color":"#ffdd99"},{"x":100,"y":110,"color":"#ffdd99"},{"x":140,"y":110,"color":"#e6e6ff"},{"x":100,"y":150,"color":"#ffbb33"},{"x":100,"y":160,"color":"#ffdd99"},{"x":120,"y":160,"color":"#ffe6b3"},{"x":140,"y":160,"color":"#ffe6b3"},{"x":70,"y":180,"color":"#ccccff"},{"x":70,"y":170,"color":"#ccccff"},{"x":50,"y":160,"color":"#e6e6ff"},{"x":40,"y":140,"color":"#e6e6ff"},{"x":90,"y":80,"color":"#ffe6b3"},{"x":50,"y":80,"color":"#e6e6ff"}],
+
+        "number": 26,
+        "date": "02/24/2020",
+        "maincolor":"#ffe6b3"
+    }
+
+  ]
