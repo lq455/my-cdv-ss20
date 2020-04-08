@@ -269,22 +269,7 @@ incomingDataGroups
  ;
 }
 
-function updateData(){
- allNames = data.map(function(d){return d.key});
- // and adjust the domain of xScale:
- xScale.domain(allNames);
- xAxis = d3.axisBottom(xScale);
- xAxis.tickFormat(d=>{return data.filter(dd=>dd.key==d)[0].name;});
- yMax = d3.max(data, function(d){return d.value});
- yDomain = [0, yMax+yMax*0.1];
- yScale.domain(yDomain);
- xAxisGroup.transition().delay(400).call(xAxis).selectAll("text").attr("font-size", 18)
- xAxisGroup.selectAll("line").remove();
- exitingElements = elementsForPage.exit();
- enteringElements = elementsForPage.enter();
- console.log(exitingElements,'haha')
 
-}
 document.getElementById("buttonC").addEventListener("click", removeAndAdd);
 
 function sortData(){
@@ -338,17 +323,110 @@ function shuffleData(){
 document.getElementById("buttonE").addEventListener("click", shuffleData);
 
 function weirdData(){
+  let ll=data.length
 
-remove();
-add();
-remove();
-add();
-remove();
-add();
-remove();
-add();
+  removeDatapoints(data.length);
 
-}
+  elementsForPage = graphGroup.selectAll(".datapoint").data(data,function(d){return d.key});
+
+
+  console.log('ex',exitingElements)
+     updateData()
+
+
+  elementsForPage.transition().delay(400).duration(450).attr("transform", function(d, i){
+    return "translate("+ xScale(d.key)+ "," + (h - padding) + ")"
+  });
+  elementsForPage.select("rect")
+   .transition()
+   .delay(400)
+   .duration(450)
+   .attr("width", function(){
+      return xScale.bandwidth();
+   })
+   .attr("y", function(d,i){
+     return -yScale(d.value);
+   })
+   .attr("height", function(d, i){
+     return yScale(d.value);
+   })
+  ;
+
+
+
+  let exitingDataGroups = exitingElements.select('rect')
+    .attr('fill','#00cccc')
+    .transition()
+    .delay(400)
+    .duration(450)
+    .attr('height',0)
+    .attr('y',0)
+   ;
+   exitingElements.transition().delay(400).duration(450).remove()
+   addDatapoints(ll*2);
+ elementsForPage = graphGroup.selectAll(".datapoint").data(data,assignKey);
+ updateData()
+
+ elementsForPage.transition().duration(450).attr("transform", function(d, i){
+   return "translate("+ xScale(d.key)+ "," + (h - padding) + ")"
+ });
+
+ elementsForPage.select("rect")
+ .attr('fill','black')
+  .transition()
+  .delay(400)
+  .duration(450)
+  .attr("width", function(){
+     return xScale.bandwidth();
+  })
+  .attr("y", function(d,i){
+    return -yScale(d.value);
+  })
+  .attr("height", function(d, i){
+    return yScale(d.value);
+  })
+ ;
+
+ let incomingDataGroups = enteringElements
+   .append("g")
+     .classed("datapoint", true)
+ ;
+ // position the groups:
+ incomingDataGroups.attr("transform", function(d, i){
+   return "translate("+ xScale(d.key)+ "," + (h - padding) + ")"
+ });
+ // and append rectangles
+ incomingDataGroups
+   .append("rect")
+     .attr("y", function(d,i){
+       return 0;
+     })
+     .attr("height", function(d, i){
+       return 0;
+     })
+     .attr("width", function(){
+       return xScale.bandwidth();
+     })
+     .attr("fill", "#F27294")
+     .transition()
+     .delay(400)
+     .duration(450)
+     .attr("y", function(d,i){
+       return -yScale(d.value);
+     })
+     .attr("height", function(d, i){
+       return yScale(d.value);
+     })
+     .transition()
+     .delay(400)
+     .duration(450)
+
+
+  ;
+
+  }
+
+
 document.getElementById("buttonF").addEventListener("click", weirdData);
 
 let allNames = data.map(function(d){return d.key});
