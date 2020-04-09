@@ -23,17 +23,6 @@ function add(){
 elementsForPage = graphGroup.selectAll(".datapoint").data(data,assignKey);
 updateData()
 
-
-
-
-console.log("new data", data)
-
-
-
-console.log('elementsForPage',elementsForPage);
-
-
-
 elementsForPage.transition().duration(450).attr("transform", function(d, i){
   return "translate("+ xScale(d.key)+ "," + (h - padding) + ")"
 });
