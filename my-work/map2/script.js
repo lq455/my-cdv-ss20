@@ -11,7 +11,7 @@ let viz = d3.select("#container").append("svg")
 ;
 d3.json("moon.geojson").then(function(geoData){
   d3.csv('moon.csv').then(function(incomingData){
-//console.log(geoData)
+console.log(geoData)
 //console.log(incomingData)
 
     let projection = d3.geoAzimuthalEqualArea()
