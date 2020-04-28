@@ -17,7 +17,7 @@ Year,Month,Day,Location,Description,Credit
 1778,Jun,14,NA: 1 12 min,During solar eclipse-observed spot near lunar limb almost as bright as sun,Ulloa
 1783,Mar,18,NA,Moving glows around middle of disk during lunar eclipse,Messier
 1783,Mar,0,Near Aristarchus,Bright points seen during observation of star occultation,W.Herschel
-1783,May,4,Aristarchus-vicinity,Red spot-4th mag-diameter <3,W.Herschel-Mrs Lind
+1783,May,4,Aristarchus,Red spot-4th mag-diameter <3,W.Herschel-Mrs Lind
 1786,Dec,24,Aristarchus,Extraordinarily bright,Schroter
 1787,Apr,19,Dark side,Three volcanoes. The brightest-3573 from N limb-the other two much farther toward the center of the moon,W.Herschel
 1787,Apr,20,Dark side,Brightest volcano even brighter and at least 3 miles in diameter,W.Herschel
@@ -27,7 +27,7 @@ Year,Month,Day,Location,Description,Credit
 1788,Mar,9,Dark side,Bright spot,Schroter
 1788,Mar,13,Riccioli,Bright spot,Schroter
 1788,Mar,13,Helicon,Lunar volcano like 6th mag star,Nouet
-1788,Apr,9,Aristarchus: 1 hr,Extraordinarily bright,Bode
+1788,Apr,9,Aristarchus,Extraordinarily bright,Bode
 1788,Apr,9,Aristarchus,Bright spot 26 N of crater rim,Schroter-Bode
 1788,May,8,NA,Bright spots,Mechain
 1788,May,8,NA,Bright spots,Bode
@@ -38,7 +38,7 @@ Year,Month,Day,Location,Description,Credit
 1788,Dec,2,Aristarchus,Extraordinarly bright-like star,Schroter
 1788,Dec,11,Plato,Bright area-like thin white cloud,Schroter
 1789,Jan,10,NA,Lunar volcano,Seyffer
-1789,Mar,29,Grimaldi-and near Riccioli,Two flickering spots on E edge of Grimaldi-and near Riccioli on dark side of moon a bright spot,Schroter
+1789,Mar,29,Grimaldi,Two flickering spots on E edge of Grimaldi-and near Riccioli on dark side of moon a bright spot,Schroter
 1789,Mar,29,Aristarchus,Nebulous bright area,Schroter
 1789,Mar,0,Near Aristarchus,Brilliant spots near Aristarchus: luminous spots on dark side,Bode
 1789,Apr,0,Near Aristarchus,Brilliant spots near Aristarchus: luminous spots on dark side,Bode
@@ -53,7 +53,7 @@ Year,Month,Day,Location,Description,Credit
 1797,Mar,2,Promontorium Heraclides-vicinity,Observations of a volcano on the moon,Caroché
 1797,Jul,2,Mare Vaporum,Vapors resembling mountain,Schroter-Olber
 1820,Oct,17,S of Sinus Iridum,Brilliant spots in Mare Imbrium S of Sinus Iridum,Luthmer
-1821,Feb,5,Aristarchus-vicinity,Luminous appearance on dark side: 6th to 7th mag-3 to 4 diameter,Kater-Olbers-Browne
+1821,Feb,5,Aristarchus,Luminous appearance on dark side: 6th to 7th mag-3 to 4 diameter,Kater-Olbers-Browne
 1821,Apr,7,Posidonius,Appeared without shadow,Gruithuisen
 1821,May,4,Aristarchus-vicinity,Bright spot on dark side-<1 diameter,Ward-Baily
 1821,Jul,25,Dark side,Brilliant flashing spots,Gruithuisen
