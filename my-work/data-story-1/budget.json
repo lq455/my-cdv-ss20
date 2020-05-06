@@ -1,0 +1,109 @@
+[
+    [
+        {
+            "line": "NASA",
+            "year": "1958",
+            "spending": "0.1"
+        },
+        {
+            "line": "NASA",
+            "year": "1959",
+            "spending": "0.2"
+        },
+        {
+            "line": "NASA",
+            "year": "1960",
+            "spending": "0.5"
+        },
+        {
+            "line": "NASA",
+            "year": "1961",
+            "spending": "0.9"
+        },
+        {
+            "line": "NASA",
+            "year": "1962",
+            "spending": "1.18"
+        },
+        {
+            "line": "NASA",
+            "year": "1963",
+            "spending": "2.29"
+        },
+        {
+            "line": "NASA",
+            "year": "1964",
+            "spending": "3.52"
+        },
+        {
+            "line": "NASA",
+            "year": "1965",
+            "spending": "4.31"
+        },
+        {
+            "line": "NASA",
+            "year": "1966",
+            "spending": "4.41"
+        },
+        {
+            "line": "NASA",
+            "year": "1967",
+            "spending": "3.45"
+        }
+
+    ],
+    [
+        {
+            "line": "TR",
+            "year": "1958",
+            "spending": "1.5"
+        },
+        {
+            "line": "TR",
+            "year": "1959",
+            "spending": "0.8"
+        },
+        {
+            "line": "TR",
+            "year": "1960",
+            "spending": "0.1"
+        },
+        {
+            "line": "TR",
+            "year": "1961",
+            "spending": "0.8"
+        },
+        {
+            "line": "TR",
+            "year": "1962",
+            "spending": "0.3"
+        },
+        {
+            "line": "TR",
+            "year": "1963",
+            "spending": "1.1"
+        },
+        {
+            "line": "TR",
+            "year": "1964",
+            "spending": "5.7"
+        },
+        {
+            "line": "TR",
+            "year": "1965",
+            "spending": "2.1"
+        },
+        {
+            "line": "TR",
+            "year": "1966",
+            "spending": "2.7"
+        },
+        {
+            "line": "TR",
+            "year": "1967",
+            "spending": "2.5"
+        }
+
+
+    ]
+]

@@ -5,4 +5,53 @@ p{
   margin-left:-20px;
   margin-bottom: -20px;
   font-family: Times, Times New Roman, Georgia, serif;
+};
+
+yaxisgroup line{
+  stroke: #f0f0f5;
+}
+
+.yaxisgroup path{
+  stroke: #f0f0f5;
+}
+
+.yaxisgroup text{
+  fill: #f0f0f5;
+}
+
+xaxisgroup line{
+  stroke: #f0f0f5;
+}
+
+.xaxisgroup path{
+  stroke: #f0f0f5;
+}
+
+.xaxisgroup text{
+  fill: #f0f0f5;
+}
+
+
+yaxisgroupI line{
+  stroke: none;
+}
+
+.yaxisgroupI path{
+  stroke: none;
+}
+
+.yaxisgroupI text{
+  fill: none;
+}
+
+xaxisgroupI line{
+  stroke: none;
+}
+
+.xaxisgroupI path{
+  stroke: none;
+}
+
+.xaxisgroupI text{
+  fill: none;
 }
