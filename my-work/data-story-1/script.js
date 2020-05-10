@@ -223,9 +223,9 @@ let dt5 = viz.append('text')
     else if (count == 2){
   textElement
     .transition()
-    .attr('x',20)
+    .attr('x',0)
 
-    .text('<<<Both parties had invested a huge amount of resource in the Space Race. The TR R-277,  also known as the Chronological Catalog of Reported Lunar Events released in 1968, was one of the products of the “Space Race”. The map above indicates the coverage of the reports over 500 years.>>>')
+    .text('<<<Both parties had invested a huge amount of resource in the Space Race. This project intends to interpret the TR R-277,  also known as the Chronological Catalog of Reported Lunar Events released in 1968, with its historical background during the Cold War. The map above indicates the coverage of all the reports.>>>')
     .duration(500)
     ;
 
@@ -271,13 +271,17 @@ let dt5 = viz.append('text')
     ;
 }
 else if (count == 3){
+  dt1.text('')
+  dt2.text('')
+  dt3.text('')
+  dt4.text('')
   alldata.attr('fill','none')
   .attr('stroke','none');
      textElement
        .transition()
        .attr('x',185)
        //.duration(500)
-       .text('<<<The TR R-277 was at that time the single most complete report of all observed lunar anomalies, and lists of 536 pieces of records from 1500 till 1967. You may check how the coverage of the reports differs at different period of time here.>>>');
+       .text('<<<The TR R-277 was at that time the single most complete report of all observed lunar anomalies. It lists of 536 pieces of records from 1500 till 1967. You may check how the coverage of the reports differs at different period of time here.>>>');
      t1=viz.append('text')
      .text('1920s')
      .attr('x',w/4+300)
@@ -499,7 +503,7 @@ else if (count == 3){
     .transition()
     .attr('x',0)
     .duration(500)
-    .text('<<On the map above, the red circles represent records that were made during the Cold War. You can see that among all 536 pieces of records that covered about 500 years reports, more than half of them were created during the Cold War. You may move your mouse on these circles to learn more details.>>');
+    .text('<<On the map above, the red circles represent records that were made during the Cold War. You can see that among all 536 pieces of records that covered about 500 years reports, more than half of them were created during the Cold War. You may move your mouse on these circles to learn more.>>');
  t1
  .remove();
  t2
