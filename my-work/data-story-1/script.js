@@ -105,6 +105,26 @@ let dt5 = viz.append('text')
 .attr('fill','white')
 
 ;
+let projectionI = d3.geoAzimuthalEqualArea()
+  .translate([w/2,h/2])
+  .fitExtent([[0,0],[w/2,h-200]],geoData)
+
+let pathMakerI = d3.geoPath(projectionI);
+let
+moonMapI=viz.selectAll(".map2").data(geoData.features).enter()
+
+.append("path")
+
+  .attr("class", "map2")
+  .attr("d", pathMakerI)
+  //.transition()
+  .attr('fill','none')
+  .attr('stroke','none')
+  //alldata.duration(200)
+
+
+  ;
+
 
     let projection = d3.geoAzimuthalEqualArea()
       .translate([w/2,h/2])
@@ -126,7 +146,7 @@ let dt5 = viz.append('text')
 
   function circleX(d,i){
     r=Math.floor(i/24)
-    x=1620+r*25
+    x=1050+r*25
     return x
 
   }
@@ -146,8 +166,8 @@ let dt5 = viz.append('text')
     .attr('class','alldata')
       .attr('cx',circleX)
       .attr('cy',circleY)
-      .attr('r',4)
-      .attr('fill','none');
+      .attr('r',0)
+      //.attr('fill','none');
 
   function checkCount(d,i){
     if (count==0){
@@ -276,6 +296,9 @@ let dt5 = viz.append('text')
     ;
 }
 else if (count == 3){
+  moonMap
+  .attr('fill','grey')
+  .attr('stroke','white');
   dt1.text('')
   dt2.text('')
   dt3.text('')
@@ -341,7 +364,7 @@ else if (count == 3){
      ;
      t2=viz.append('text')
      .text('1940s')
-     .attr('x',w/4+630)
+     .attr('x',w/4+730)
      .attr('y',20)
      .attr('fill','white')
      .on('click',function(d,i){
@@ -447,7 +470,7 @@ else if (count == 3){
      ;
      t3=viz.append('text')
      .text('1960s')
-     .attr('x',w/4+930)
+     .attr('x',w/4+1030)
      .attr('y',20)
      .attr('fill','white')
      .on('click',function(d,i){
@@ -498,12 +521,22 @@ else if (count == 3){
    })
      ;
 
-
+     try {
+       moonMapI.attr('fill','none')
+       .attr('stroke','none')
+    } catch (error) {
+    console.log('lol')
+    }
    }
    else if (count == 4){
-    moonMap
+    moonMapI
     .attr('fill','grey')
-    .attr('stroke','white');
+    .attr('stroke','white')
+
+
+    moonMap
+    .attr('fill','none')
+    .attr('stroke','none');
   textElement
     .transition()
     .attr('x',0)
@@ -529,6 +562,9 @@ console.log('lol')
 
     alldata
     .transition()
+    .attr('r',4)
+
+    .duration(800)
 
     .attr('fill','white')
     .attr('stroke',function(d,i){
@@ -540,13 +576,16 @@ console.log('lol')
       }
     })
 
-    .attr('stroke-width',2);
+    .attr('stroke-width',2)
+  //  .delay(1000)
+
+    ;
     alldata
 
     .on('mouseover',function(d,i){
       dt1
       .text(d.Year)
-      .attr('x',w/20)
+      .attr('x',w-750)
       .attr('y',h/20+250)
       .attr('fill','white');
       let lo=d.Location;
@@ -557,7 +596,7 @@ console.log('lol')
       // .attr('opacity',1);
 
 
-    moonMap
+    moonMapI
     .attr('stroke','white')
     .attr('stroke',function(d,i){
       //console.log(d.properties)
@@ -611,19 +650,19 @@ console.log('lol')
 
       dt2
       .text('Location: '+d.Location)
-      .attr('x',w/20)
+      .attr('x',w-750)
       .attr('y',h/20+300)
       .attr('fill','white');
 
       dt3
       .text('Description: '+d.Description)
-      .attr('x',w/20)
+      .attr('x',w-750)
       .attr('y',h/20+350)
       .attr('fill','white');
 
       dt4
       .text('Credit: '+d.Credit)
-      .attr('x',w/20)
+      .attr('x',w-750)
       .attr('y',h/20+400)
       .attr('fill','white');
   let mouseInSVG = d3.mouse(viz.node())
@@ -732,6 +771,9 @@ else if (count == 5){
 
         xAxisGroup.attr('opacity',1)
         yAxisGroup.attr('opacity',1)
+
+      moonMapI.attr('fill','none')
+      .attr('stroke','none')
 
 }
 else if (count == 6){
