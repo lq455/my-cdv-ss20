@@ -81,6 +81,7 @@ let dt1 = viz.append('text')
 .attr('y',padding/2)
 .attr('class','discription')
 ;
+
 let dt2 = viz.append('text')
 .text('')
 .attr('x',w/2)
@@ -93,7 +94,13 @@ let dt3 = viz.append('text')
 .attr('y',padding/2)
 .attr('class','discription')
 ;
+
 let dt4 = viz.append('text')
+.text('')
+.attr('x',w/2)
+.attr('y',padding/2)
+.attr('class','discription');
+let dt6 = viz.append('text')
 .text('')
 .attr('x',w/2)
 .attr('y',padding/2)
@@ -241,8 +248,10 @@ moonMapI=viz.selectAll(".map2").data(geoData.features).enter()
         .text("During the Cold War, there is a historic event called the \"Space Race\". It's the competition between the Soviet Union and the United States to achieve first in spaceflight capability as a means to show off military power.");
         moonMap
         .transition()
+        .attr("d",pathMaker)
         .attr('fill','grey')
         .attr('stroke','white')
+        .duration(1000);
 
     }
     else if (count == 2){
@@ -255,6 +264,8 @@ moonMapI=viz.selectAll(".map2").data(geoData.features).enter()
     ;
 
     moonMap
+    .transition()
+    .attr("d",pathMaker)
     .attr('stroke',function(d,i){
       //console.log(d.properties)
 
@@ -292,13 +303,20 @@ moonMapI=viz.selectAll(".map2").data(geoData.features).enter()
         return "grey"
       }
     })
+    .duration(1200)
 
     ;
 }
 else if (count == 3){
+  dt6.text('');
   moonMap
+  .transition()
+  .attr("d",pathMaker)
   .attr('fill','grey')
-  .attr('stroke','white');
+  .attr('stroke','white')
+  .duration(1200)
+
+  ;
   dt1.text('')
   dt2.text('')
   dt3.text('')
@@ -309,7 +327,7 @@ else if (count == 3){
        .transition()
        .attr('x',w/500)
        //.duration(500)
-       .text('The TR R-277 was at that time the single most complete report of all observed lunar anomalies. It lists of 536 pieces of records from 1500 till 1967. You may check how the coverage of the reports differs at different period of time ');
+       .text('The TR R-277 was at that time the single most complete report of all observed lunar anomalies. It lists of 536 pieces of records from 1500 till 1967. You may check how the coverage of the reports differs at different period of time. ');
      t1=viz.append('text')
      .text('1920s')
      .attr('x',w/4+300)
@@ -317,6 +335,8 @@ else if (count == 3){
      .attr('fill','white')
      .on('click',function(d,i){
        moonMap
+       .transition()
+       .attr("d",pathMaker)
 
        .attr('stroke','white')
        .attr('stroke',function(d,i){
@@ -335,7 +355,7 @@ else if (count == 3){
                return "white"
              }
            })
-      .transition()
+
        .attr('fill',function(d,i){
          //console.log(d.properties)
          let correspondingDatapoint = incomingData.find(function(datapoint){
@@ -352,7 +372,9 @@ else if (count == 3){
            return "grey"
          }
        })
+       .duration(1000)
    })
+
    .on('mouseover',function(d,i){
      t1.
      attr('fill',"red")
@@ -529,6 +551,11 @@ else if (count == 3){
     }
    }
    else if (count == 4){
+     dt6.text('Move your mouse on these circles to learn more.')
+ .attr('x',1075)
+ .attr('y',800)
+ .attr('font-size',40)
+ .attr('fill','white');
     moonMapI
     .attr('fill','grey')
     .attr('stroke','white')
@@ -580,6 +607,8 @@ console.log('lol')
   //  .delay(1000)
 
     ;
+    moonMap.attr('fill','none')
+    .attr('stroke','none');
     alldata
 
     .on('mouseover',function(d,i){
@@ -648,6 +677,7 @@ console.log('lol')
     });
 
 
+
       dt2
       .text('Location: '+d.Location)
       .attr('x',w-750)
@@ -711,6 +741,7 @@ else if (count == 5){
   dt2.text('');
   dt3.text('');
   dt4.text('');
+  dt6.text('');
   textElementIII.text('');
   alldata.attr('fill','none')
   .attr('stroke','none');
